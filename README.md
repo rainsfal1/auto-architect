@@ -58,7 +58,7 @@ auto-architect/
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/auto-architect.git
+    git clone https://github.com/rainsfal1/auto-architect.git
     cd auto-architect
     ```
 
