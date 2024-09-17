@@ -1,0 +1,3151 @@
+2024-08-11 20:26:13,272 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:26:47,272 - __main__ - ERROR - An error occurred in main: The repository for conll2003 contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/conll2003.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+2024-08-11 20:26:57,777 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:27:17,188 - datasets_modules.datasets.conll2003.9a4d16a94f8674ba3466315300359b0acd891b68b6c8743ddf60b9c702adce98.conll2003 - INFO - ⏳ Generating examples from = /home/mati-ur-rehman/.cache/huggingface/datasets/downloads/extracted/79792e7b1288318bdb1ef701fa9c3fa009585ccdb1d1557c21e1105f5a42b18f/train.txt
+2024-08-11 20:27:18,294 - datasets_modules.datasets.conll2003.9a4d16a94f8674ba3466315300359b0acd891b68b6c8743ddf60b9c702adce98.conll2003 - INFO - ⏳ Generating examples from = /home/mati-ur-rehman/.cache/huggingface/datasets/downloads/extracted/79792e7b1288318bdb1ef701fa9c3fa009585ccdb1d1557c21e1105f5a42b18f/valid.txt
+2024-08-11 20:27:18,562 - datasets_modules.datasets.conll2003.9a4d16a94f8674ba3466315300359b0acd891b68b6c8743ddf60b9c702adce98.conll2003 - INFO - ⏳ Generating examples from = /home/mati-ur-rehman/.cache/huggingface/datasets/downloads/extracted/79792e7b1288318bdb1ef701fa9c3fa009585ccdb1d1557c21e1105f5a42b18f/test.txt
+2024-08-11 20:27:20,493 - __main__ - ERROR - An error occurred in main: name 'num_labels' is not defined
+2024-08-11 20:28:20,789 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:28:39,964 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/2p0qnads/checkpoint.
+2024-08-11 20:28:39,964 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-11 20:28:39,965 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-11 20:28:54,452 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-11 20:28:54,452 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-11 20:28:54,453 - __main__ - ERROR - An error occurred in main: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (3250,) + inhomogeneous part.
+2024-08-11 20:28:54,459 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-11 20:28:54,476 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/2p0qnads/checkpoint.
+2024-08-11 20:28:54,542 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-11 20:31:19,367 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:31:22,130 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/b8xhuyt6/checkpoint.
+2024-08-11 20:31:22,130 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-11 20:31:22,130 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-11 20:31:34,923 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-11 20:31:34,923 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-11 20:31:34,923 - __main__ - ERROR - An error occurred in main: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (3250,) + inhomogeneous part.
+2024-08-11 20:31:34,925 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-11 20:31:34,943 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/b8xhuyt6/checkpoint.
+2024-08-11 20:31:35,018 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-11 20:34:39,738 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:34:42,306 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/9085anw3/checkpoint.
+2024-08-11 20:34:42,306 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-11 20:34:42,306 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-11 20:34:55,899 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-11 20:34:55,899 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-11 20:34:55,899 - __main__ - ERROR - An error occurred in main: 'list' object has no attribute 'shape'
+2024-08-11 20:34:55,900 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-11 20:34:55,914 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/9085anw3/checkpoint.
+2024-08-11 20:34:55,977 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-11 20:37:55,453 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:37:58,400 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/cwyj2d6r/checkpoint.
+2024-08-11 20:37:58,401 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-11 20:37:58,401 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-11 20:38:41,410 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-11 20:38:41,410 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-11 20:38:41,410 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-11 20:38:41,410 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-11 20:38:41,423 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/cwyj2d6r/checkpoint.
+2024-08-11 20:38:41,495 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-11 20:38:41,497 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-11 20:38:41,498 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-11 20:39:01,942 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-11 20:39:05,180 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/jtnrxz9d/checkpoint.
+2024-08-11 20:39:05,180 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-11 20:39:05,180 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-11 20:42:17,321 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-11 20:42:17,321 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-11 20:42:17,322 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-11 20:42:17,322 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-11 20:42:17,334 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/jtnrxz9d/checkpoint.
+2024-08-11 20:42:17,424 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-11 20:42:17,424 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-11 20:42:17,425 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-12 12:32:24,186 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 12:32:42,210 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 12:32:49,733 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/miodbj0r/checkpoint.
+2024-08-12 12:32:49,734 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 12:32:49,734 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 12:32:49,880 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-12 12:32:49,881 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-12 12:32:49,881 - __main__ - ERROR - An error occurred in main: evaluate_model() missing 1 required positional argument: 'model_config'
+2024-08-12 12:32:49,883 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 12:32:49,894 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/miodbj0r/checkpoint.
+2024-08-12 12:32:49,957 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 12:37:32,725 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 12:37:38,322 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/fstbyp84/checkpoint.
+2024-08-12 12:37:38,322 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 12:37:38,322 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 12:37:38,488 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-12 12:37:38,489 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-12 12:37:38,489 - __main__ - ERROR - An error occurred in main: evaluate_model() missing 1 required positional argument: 'model_config'
+2024-08-12 12:37:38,490 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 12:37:38,503 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/fstbyp84/checkpoint.
+2024-08-12 12:37:38,575 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 12:38:04,917 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 12:38:07,908 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/t4xbnqm0/checkpoint.
+2024-08-12 12:38:07,909 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 12:38:07,909 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 12:38:08,086 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-12 12:38:08,086 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-12 12:38:08,086 - __main__ - ERROR - An error occurred in main: evaluate_model() missing 1 required positional argument: 'model_config'
+2024-08-12 12:38:08,087 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 12:38:08,104 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/t4xbnqm0/checkpoint.
+2024-08-12 12:38:08,192 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 12:38:26,529 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 12:38:39,226 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/hvndxkb2/checkpoint.
+2024-08-12 12:38:39,227 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 12:38:39,227 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 12:38:39,405 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-12 12:38:39,405 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-12 12:38:39,406 - __main__ - ERROR - An error occurred in main: 'list' object has no attribute 'label'
+2024-08-12 12:38:39,407 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 12:38:39,422 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/hvndxkb2/checkpoint.
+2024-08-12 12:38:39,500 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 12:40:33,621 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 12:40:41,362 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/x6bj2wkn/checkpoint.
+2024-08-12 12:40:41,363 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 12:40:41,363 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 12:50:41,645 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-12 12:50:41,646 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-12 12:50:41,646 - __main__ - ERROR - An error occurred in main: name 'time' is not defined
+2024-08-12 12:50:41,647 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 12:50:41,658 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/x6bj2wkn/checkpoint.
+2024-08-12 12:50:41,731 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 13:12:40,427 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 13:12:43,276 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/jiglbyhq/checkpoint.
+2024-08-12 13:12:43,276 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 13:12:43,276 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 13:12:43,367 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-12 13:12:43,367 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-12 13:12:43,368 - __main__ - ERROR - An error occurred in main: 'list' object has no attribute 'label'
+2024-08-12 13:12:43,368 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 13:12:43,377 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/jiglbyhq/checkpoint.
+2024-08-12 13:12:43,438 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 13:13:48,580 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 13:14:04,185 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/124ajoug/checkpoint.
+2024-08-12 13:14:04,185 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 13:14:04,185 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 13:14:46,107 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.7463779125948848) {'model_type': [0], 'embedding_dim': [3], 'rnn_hidden_size': [1], 'rnn_num_layers': [2], 'rnn_dropout': [0], 'rnn_layer': 1, 'transformer_layer': 0, 'cnn_layer': 2}
+2024-08-12 13:14:55,310 - nni.nas.execution.sequential - ERROR - Model 2 is interrupted. Exiting gracefully...
+2024-08-12 13:14:55,310 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-12 13:14:55,310 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-12 13:14:55,310 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 13:14:55,320 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/124ajoug/checkpoint.
+2024-08-12 13:14:55,381 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 13:14:55,381 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-12 13:16:44,523 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 13:16:51,039 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/x46fzpaq/checkpoint.
+2024-08-12 13:16:51,040 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 13:16:51,040 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 13:24:28,719 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.9381462777717838) {'model_type': [0], 'embedding_dim': [2], 'rnn_hidden_size': [0], 'rnn_num_layers': [1], 'rnn_dropout': [0], 'rnn_layer': 1, 'transformer_layer': 0, 'cnn_layer': 2}
+2024-08-12 13:25:28,113 - nni.nas.execution.sequential - ERROR - Model 2 is interrupted. Exiting gracefully...
+2024-08-12 13:25:28,113 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-12 13:25:28,113 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-12 13:25:28,113 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 13:25:28,123 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/x46fzpaq/checkpoint.
+2024-08-12 13:25:28,187 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 13:25:28,187 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-12 13:25:38,012 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 13:25:47,432 - __main__ - ERROR - An error occurred in main: free variable 'num_labels' referenced before assignment in enclosing scope
+2024-08-12 13:26:27,768 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 13:26:39,742 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/j7ysip6g/checkpoint.
+2024-08-12 13:26:39,743 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 13:26:39,743 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 13:27:01,183 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-12 13:27:01,183 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-12 13:27:01,183 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-12 13:27:01,183 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 13:27:01,192 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/j7ysip6g/checkpoint.
+2024-08-12 13:27:01,256 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 13:27:01,256 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-12 13:27:01,256 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-12 13:27:20,496 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 13:27:37,873 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/2zg50ynx/checkpoint.
+2024-08-12 13:27:37,874 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 13:27:37,874 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 13:46:21,486 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.9239464063635812) {'model_type': [1], 'embedding_dim': [3], 'rnn_hidden_size': [1], 'rnn_num_layers': [2], 'rnn_dropout': [0], 'rnn_layer': 0, 'transformer_layer': 0, 'cnn_layer': 1}
+2024-08-12 14:01:29,205 - nni.nas.strategy.rl - INFO - [Trajectory    2] (trained, 0.9214953093901308) {'model_type': [2], 'embedding_dim': [2], 'rnn_hidden_size': [1], 'rnn_num_layers': [2], 'rnn_dropout': [1], 'rnn_layer': 1, 'transformer_layer': 0, 'cnn_layer': 0}
+2024-08-12 14:04:28,842 - nni.nas.execution.sequential - ERROR - Model 3 is interrupted. Exiting gracefully...
+2024-08-12 14:04:28,842 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-12 14:04:28,842 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-12 14:04:28,842 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 14:04:28,857 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/2zg50ynx/checkpoint.
+2024-08-12 14:04:28,928 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 14:04:28,930 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-12 14:17:37,964 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-08-12 14:17:48,706 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/nxb79s2p/checkpoint.
+2024-08-12 14:17:48,706 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-12 14:17:48,706 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-12 15:21:47,901 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.9332127894131882) {'model_type': [2], 'embedding_dim': [2], 'rnn_hidden_size': [2], 'rnn_num_layers': [1], 'rnn_dropout': [0], 'rnn_layer': 0, 'transformer_layer': 0, 'cnn_layer': 2}
+2024-08-12 15:27:32,657 - nni.nas.execution.sequential - ERROR - Model 2 is interrupted. Exiting gracefully...
+2024-08-12 15:27:32,657 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-12 15:27:32,657 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-12 15:27:32,657 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-12 15:27:32,667 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/mati-ur-rehman/nni-experiments/nxb79s2p/checkpoint.
+2024-08-12 15:27:32,736 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-12 15:27:32,737 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-23 01:17:51,127 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-23 01:17:51,263 - __main__ - ERROR - An error occurred in main: Directory encoded_conll2003_dataset not found
+2024-08-23 01:18:31,314 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-23 01:18:57,611 - datasets_modules.datasets.conll2003.9a4d16a94f8674ba3466315300359b0acd891b68b6c8743ddf60b9c702adce98.conll2003 - INFO - ⏳ Generating examples from = /home/spartan/.cache/huggingface/datasets/downloads/extracted/fdaacbb5060602f64c92f89175dacae88cdf8023f9a1c9aa7f9f2e4eb8f51d47/train.txt
+2024-08-23 01:18:58,393 - datasets_modules.datasets.conll2003.9a4d16a94f8674ba3466315300359b0acd891b68b6c8743ddf60b9c702adce98.conll2003 - INFO - ⏳ Generating examples from = /home/spartan/.cache/huggingface/datasets/downloads/extracted/fdaacbb5060602f64c92f89175dacae88cdf8023f9a1c9aa7f9f2e4eb8f51d47/valid.txt
+2024-08-23 01:18:58,564 - datasets_modules.datasets.conll2003.9a4d16a94f8674ba3466315300359b0acd891b68b6c8743ddf60b9c702adce98.conll2003 - INFO - ⏳ Generating examples from = /home/spartan/.cache/huggingface/datasets/downloads/extracted/fdaacbb5060602f64c92f89175dacae88cdf8023f9a1c9aa7f9f2e4eb8f51d47/test.txt
+2024-08-23 01:19:06,861 - __main__ - ERROR - An error occurred in main: `tianshou` is required to run RL-based strategy. Please use "pip install tianshou" to install it beforehand.
+2024-08-24 00:12:44,302 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 00:13:50,341 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 00:14:32,479 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 00:14:55,685 - __main__ - ERROR - An error occurred in main: `tianshou` is required to run RL-based strategy. Please use "pip install tianshou" to install it beforehand.
+2024-08-24 00:17:33,791 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 00:17:58,582 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/b91yx63l/checkpoint.
+2024-08-24 00:17:58,583 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 00:17:58,583 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 00:18:05,269 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 00:18:05,269 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 00:18:05,269 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 00:18:05,269 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 00:18:05,278 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/b91yx63l/checkpoint.
+2024-08-24 00:18:05,282 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 00:18:05,282 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 00:18:05,282 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 01:01:20,949 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:01:30,288 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/vy608zl9/checkpoint.
+2024-08-24 01:01:30,289 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:01:30,289 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:01:30,410 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:01:30,410 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:01:30,410 - __main__ - ERROR - An error occurred in main: name 'get_data_loader' is not defined
+2024-08-24 01:01:30,417 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:01:30,427 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/vy608zl9/checkpoint.
+2024-08-24 01:01:30,431 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:04:01,412 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:04:10,435 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/sqrbj8md/checkpoint.
+2024-08-24 01:04:10,436 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:04:10,436 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:04:10,557 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:04:10,557 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:04:10,557 - __main__ - ERROR - An error occurred in main: name 'get_data_loader' is not defined
+2024-08-24 01:04:10,558 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:04:10,570 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/sqrbj8md/checkpoint.
+2024-08-24 01:04:10,574 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:04:43,935 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:04:52,565 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/pd2yriw5/checkpoint.
+2024-08-24 01:04:52,565 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:04:52,565 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:04:52,852 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:04:52,852 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:04:52,852 - __main__ - ERROR - An error occurred in main: name 'class_weights' is not defined
+2024-08-24 01:04:52,853 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:04:52,863 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/pd2yriw5/checkpoint.
+2024-08-24 01:04:52,867 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:09:06,965 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:09:08,235 - __main__ - ERROR - An error occurred in main: name 'torch' is not defined
+2024-08-24 01:09:39,226 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:09:40,153 - __main__ - ERROR - An error occurred in main: name 'torch' is not defined
+2024-08-24 01:10:06,923 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:10:07,842 - __main__ - ERROR - An error occurred in main: name 'num_labels' is not defined
+2024-08-24 01:10:59,608 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:11:08,173 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/qefd2acw/checkpoint.
+2024-08-24 01:11:08,173 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:11:08,173 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:11:08,471 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:11:08,471 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:11:08,471 - __main__ - ERROR - An error occurred in main: 'NoneType' object has no attribute 'to'
+2024-08-24 01:11:08,472 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:11:08,480 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/qefd2acw/checkpoint.
+2024-08-24 01:11:08,485 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:12:08,981 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:12:18,156 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/9g8icqwu/checkpoint.
+2024-08-24 01:12:18,156 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:12:18,156 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:12:18,426 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:12:18,427 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:12:18,427 - __main__ - ERROR - An error occurred in main: 'NoneType' object has no attribute 'to'
+2024-08-24 01:12:18,427 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:12:18,436 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/9g8icqwu/checkpoint.
+2024-08-24 01:12:18,441 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:15:57,804 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:16:06,743 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/jvkz0dfm/checkpoint.
+2024-08-24 01:16:06,744 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:16:06,744 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:16:06,875 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:16:06,875 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:16:06,875 - __main__ - ERROR - An error occurred in main: Object of type ChosenInputs is not JSON serializable
+2024-08-24 01:16:06,882 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:16:06,891 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/jvkz0dfm/checkpoint.
+2024-08-24 01:16:06,896 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:18:45,721 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:18:54,593 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/y7xsl1zv/checkpoint.
+2024-08-24 01:18:54,593 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:18:54,593 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:19:04,092 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 01:19:04,092 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 01:19:04,092 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 01:19:04,092 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:19:04,103 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/y7xsl1zv/checkpoint.
+2024-08-24 01:19:04,123 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:19:04,123 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 01:19:04,123 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 01:19:25,125 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:19:34,133 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/xuy29bc0/checkpoint.
+2024-08-24 01:19:34,134 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:19:34,134 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:22:11,312 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:22:11,313 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:22:11,313 - __main__ - ERROR - An error occurred in main: Found input variables without list of list.
+2024-08-24 01:22:11,319 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:22:11,334 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/xuy29bc0/checkpoint.
+2024-08-24 01:22:11,342 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:24:22,465 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:24:32,555 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/vbkafdmx/checkpoint.
+2024-08-24 01:24:32,555 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:24:32,555 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:27:46,341 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:27:46,341 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:27:46,341 - __main__ - ERROR - An error occurred in main: Found input variables without list of list.
+2024-08-24 01:27:46,342 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:27:46,379 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/vbkafdmx/checkpoint.
+2024-08-24 01:27:46,391 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:46:34,537 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:46:45,008 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/jag8pwkn/checkpoint.
+2024-08-24 01:46:45,008 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:46:45,008 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:49:17,305 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:49:17,310 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:49:17,310 - __main__ - ERROR - An error occurred in main: Found input variables without list of list.
+2024-08-24 01:49:17,312 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:49:17,325 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/jag8pwkn/checkpoint.
+2024-08-24 01:49:17,338 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:50:44,557 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:50:54,687 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/f8lcm2wu/checkpoint.
+2024-08-24 01:50:54,687 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:50:54,687 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:53:28,397 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:53:28,397 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:53:28,397 - __main__ - ERROR - An error occurred in main: Found input variables without list of list.
+2024-08-24 01:53:28,403 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:53:28,414 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/f8lcm2wu/checkpoint.
+2024-08-24 01:53:28,422 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:54:59,142 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:55:09,975 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/muscixer/checkpoint.
+2024-08-24 01:55:09,975 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:55:09,976 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 01:58:17,891 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 01:58:17,891 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 01:58:17,891 - __main__ - ERROR - An error occurred in main: name 'nni' is not defined
+2024-08-24 01:58:17,892 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 01:58:17,904 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/muscixer/checkpoint.
+2024-08-24 01:58:17,912 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 01:58:41,060 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 01:58:51,837 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/d8v9eolp/checkpoint.
+2024-08-24 01:58:51,837 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 01:58:51,837 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 02:01:45,591 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 02:01:45,591 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 02:01:45,592 - __main__ - ERROR - An error occurred in main: forward() missing 1 required positional argument: 'attention_mask'
+2024-08-24 02:01:45,593 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 02:01:45,604 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/d8v9eolp/checkpoint.
+2024-08-24 02:01:45,615 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 02:03:42,559 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 02:03:53,311 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/ud5fkm1t/checkpoint.
+2024-08-24 02:03:53,312 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 02:03:53,312 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 02:07:37,828 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 02:07:37,829 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 02:07:37,829 - __main__ - ERROR - An error occurred in main: name 'confusion_matrix' is not defined
+2024-08-24 02:07:37,829 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 02:07:37,845 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/ud5fkm1t/checkpoint.
+2024-08-24 02:07:37,864 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 02:09:39,051 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 02:14:06,565 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 02:14:19,027 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/mqyzd2j3/checkpoint.
+2024-08-24 02:14:19,027 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 02:14:19,028 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=4, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(5, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=4, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(5, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 02:17:06,830 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.8458359170166069) {'model_type': [1], 'embedding_dim': [2], 'rnn_hidden_size': [1], 'rnn_num_layers': [2], 'rnn_dropout': [0], 'rnn_layer': 1, 'transformer_layer': 0, 'cnn_layer': 1}
+2024-08-24 02:17:09,825 - nni.nas.execution.sequential - ERROR - Model 2 is interrupted. Exiting gracefully...
+2024-08-24 02:17:09,826 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 02:17:09,826 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 02:17:09,826 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 02:17:09,842 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/mqyzd2j3/checkpoint.
+2024-08-24 02:17:09,851 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 02:17:09,851 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-24 18:41:59,277 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 18:42:08,410 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/31f8eb25/checkpoint.
+2024-08-24 18:42:08,411 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 18:42:08,411 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 18:42:09,127 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 18:42:09,128 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 18:42:09,128 - __main__ - ERROR - An error occurred in main: 'ChosenInputs' object has no attribute 'chosen_index'
+2024-08-24 18:42:09,130 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 18:42:09,139 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/31f8eb25/checkpoint.
+2024-08-24 18:42:09,146 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 18:45:49,070 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 18:45:57,626 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/8agf7xer/checkpoint.
+2024-08-24 18:45:57,626 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 18:45:57,627 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 18:48:53,160 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 18:48:53,160 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 18:48:53,160 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 18:48:53,160 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 18:48:53,171 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/8agf7xer/checkpoint.
+2024-08-24 18:48:53,180 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 18:48:53,180 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 18:48:53,180 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 19:16:11,077 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:16:19,492 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/yoq64mei/checkpoint.
+2024-08-24 19:16:19,493 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:16:19,493 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:16:20,196 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:16:20,196 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:16:20,196 - __main__ - ERROR - An error occurred in main: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-08-24 19:16:20,197 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:16:20,207 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/yoq64mei/checkpoint.
+2024-08-24 19:16:20,217 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:17:55,724 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:18:04,534 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/hy530vem/checkpoint.
+2024-08-24 19:18:04,535 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:18:04,535 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:18:04,704 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:18:04,704 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:18:04,704 - __main__ - ERROR - An error occurred in main: train_epoch() takes 5 positional arguments but 6 were given
+2024-08-24 19:18:04,704 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:18:04,715 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/hy530vem/checkpoint.
+2024-08-24 19:18:04,724 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:18:57,278 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:19:06,475 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/7fumwl65/checkpoint.
+2024-08-24 19:19:06,475 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:19:06,475 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:19:07,194 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:19:07,194 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:19:07,194 - __main__ - ERROR - An error occurred in main: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-08-24 19:19:07,194 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:19:07,204 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/7fumwl65/checkpoint.
+2024-08-24 19:19:07,213 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:21:24,066 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:21:33,062 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/zwc2v97u/checkpoint.
+2024-08-24 19:21:33,062 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:21:33,062 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:24:19,979 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:24:19,979 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:24:19,979 - __main__ - ERROR - An error occurred in main: can only concatenate list (not "Tensor") to list
+2024-08-24 19:24:19,982 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:24:19,998 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/zwc2v97u/checkpoint.
+2024-08-24 19:24:20,009 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:42:07,603 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:42:16,104 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/fmvlrec3/checkpoint.
+2024-08-24 19:42:16,104 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:42:16,104 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:42:29,872 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 19:42:29,872 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 19:42:29,872 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 19:42:29,872 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:42:29,886 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/fmvlrec3/checkpoint.
+2024-08-24 19:42:29,894 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:42:29,895 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 19:42:29,895 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 19:43:04,415 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:43:12,684 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/eyuvc4g1/checkpoint.
+2024-08-24 19:43:12,684 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:43:12,684 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:43:28,865 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:43:28,865 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:43:28,865 - __main__ - ERROR - An error occurred in main: can only concatenate list (not "Tensor") to list
+2024-08-24 19:43:28,866 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:43:28,877 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/eyuvc4g1/checkpoint.
+2024-08-24 19:43:28,886 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:46:10,283 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:46:19,151 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/c9jyped0/checkpoint.
+2024-08-24 19:46:19,151 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:46:19,152 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:46:31,439 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:46:31,439 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:46:31,439 - __main__ - ERROR - An error occurred in main: can only concatenate list (not "Tensor") to list
+2024-08-24 19:46:31,440 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:46:31,452 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/c9jyped0/checkpoint.
+2024-08-24 19:46:31,474 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:47:09,319 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:47:17,545 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/od4l5nmw/checkpoint.
+2024-08-24 19:47:17,546 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:47:17,546 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:47:29,917 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:47:29,917 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:47:29,917 - __main__ - ERROR - An error occurred in main: can only concatenate list (not "Tensor") to list
+2024-08-24 19:47:29,919 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:47:29,933 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/od4l5nmw/checkpoint.
+2024-08-24 19:47:29,952 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:48:43,629 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:48:52,338 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/1ivk876q/checkpoint.
+2024-08-24 19:48:52,338 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:48:52,338 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:49:02,410 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 19:49:02,410 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 19:49:02,410 - __main__ - ERROR - An error occurred in main: can only concatenate list (not "Tensor") to list
+2024-08-24 19:49:02,412 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:49:02,425 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/1ivk876q/checkpoint.
+2024-08-24 19:49:02,436 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:50:06,797 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:50:15,331 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/elm2nzvi/checkpoint.
+2024-08-24 19:50:15,331 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:50:15,332 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:50:49,394 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 19:50:49,394 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 19:50:49,394 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 19:50:49,394 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:50:49,405 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/elm2nzvi/checkpoint.
+2024-08-24 19:50:49,416 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:50:49,416 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 19:50:49,416 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 19:51:41,665 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:51:51,149 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/vt1mi5l8/checkpoint.
+2024-08-24 19:51:51,149 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:51:51,149 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:54:43,117 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 19:54:43,117 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 19:54:43,143 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 19:54:43,143 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:54:43,154 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/vt1mi5l8/checkpoint.
+2024-08-24 19:54:43,167 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:54:43,168 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 19:54:43,168 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 19:54:55,043 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 19:55:05,682 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/nfyax1vu/checkpoint.
+2024-08-24 19:55:05,682 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 19:55:05,682 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 19:57:25,706 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.7463161570982018) {'embedding_dim': [2], 'cnn_filters': [2], 'cnn_kernel_size': [0], 'lstm_hidden_size': [2], 'lstm_num_layers': [0], 'lstm_dropout': [1], 'use_highway': [1], 'use_crf': [1]}
+2024-08-24 19:58:27,809 - nni.nas.execution.sequential - ERROR - Model 2 is interrupted. Exiting gracefully...
+2024-08-24 19:58:27,810 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 19:58:27,810 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 19:58:27,810 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 19:58:27,822 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/nfyax1vu/checkpoint.
+2024-08-24 19:58:27,838 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 19:58:27,838 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-24 19:59:58,627 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 20:00:08,208 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/2f4cpbey/checkpoint.
+2024-08-24 20:00:08,208 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 20:00:08,208 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 20:02:19,605 - nni.nas.strategy.rl - INFO - [Trajectory    1] (trained, 0.7463281772058701) {'embedding_dim': [0], 'cnn_filters': [0], 'cnn_kernel_size': [2], 'lstm_hidden_size': [2], 'lstm_num_layers': [2], 'lstm_dropout': [1], 'use_highway': [0], 'use_crf': [1]}
+2024-08-24 20:03:28,996 - nni.nas.execution.sequential - ERROR - Model 2 is interrupted. Exiting gracefully...
+2024-08-24 20:03:28,997 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 20:03:28,997 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 20:03:28,997 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 20:03:29,008 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/2f4cpbey/checkpoint.
+2024-08-24 20:03:29,030 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 20:03:29,030 - __main__ - ERROR - An error occurred in main: 'RawFormatModelSpace' object has no attribute 'config'
+2024-08-24 20:09:12,238 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 20:09:21,082 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/24fhk9iu/checkpoint.
+2024-08-24 20:09:21,083 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 20:09:21,083 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 20:09:21,616 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 20:09:21,616 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 20:09:21,616 - __main__ - ERROR - An error occurred in main: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument weight in method wrapper_CUDA_nll_loss_forward)
+2024-08-24 20:09:21,617 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 20:09:21,627 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/24fhk9iu/checkpoint.
+2024-08-24 20:09:21,641 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 20:10:42,681 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 20:10:51,254 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/kiwbvetr/checkpoint.
+2024-08-24 20:10:51,254 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 20:10:51,254 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 20:10:51,294 - nni.nas.execution.sequential - ERROR - Model 1 fails to be executed.
+2024-08-24 20:10:51,294 - nni.nas.strategy.base - ERROR - Strategy failed to execute.
+2024-08-24 20:10:51,294 - __main__ - ERROR - An error occurred in main: local variable 'device' referenced before assignment
+2024-08-24 20:10:51,295 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 20:10:51,304 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/kiwbvetr/checkpoint.
+2024-08-24 20:10:51,316 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 20:11:11,997 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 20:11:20,772 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/nhifr8c4/checkpoint.
+2024-08-24 20:11:20,773 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 20:11:20,773 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 20:14:29,853 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 20:14:29,853 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 20:14:29,853 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 20:14:29,853 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 20:14:29,864 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/nhifr8c4/checkpoint.
+2024-08-24 20:14:29,881 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 20:14:29,881 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 20:14:29,881 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-08-24 20:20:52,990 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-08-24 20:21:01,412 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/8vys1ejb/checkpoint.
+2024-08-24 20:21:01,412 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-08-24 20:21:01,413 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-08-24 20:21:03,639 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-08-24 20:21:03,639 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-08-24 20:21:03,639 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-08-24 20:21:03,639 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-08-24 20:21:03,649 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/8vys1ejb/checkpoint.
+2024-08-24 20:21:03,660 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-08-24 20:21:03,660 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-08-24 20:21:03,661 - __main__ - ERROR - An error occurred in main: list index out of range
+2024-09-17 15:15:17,336 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-09-17 15:16:51,332 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/9disteu8/checkpoint.
+2024-09-17 15:16:51,333 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-09-17 15:16:51,333 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-09-17 15:17:06,416 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-09-17 15:17:06,416 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-09-17 15:17:06,416 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-09-17 15:17:06,416 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-09-17 15:17:06,428 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/9disteu8/checkpoint.
+2024-09-17 15:17:06,442 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-09-17 15:17:06,442 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.
+2024-09-17 15:21:44,581 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-09-17 15:32:10,987 - datasets - INFO - PyTorch version 2.3.1 available.
+2024-09-17 15:33:42,109 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/7qw2ralt/checkpoint.
+2024-09-17 15:33:42,110 - nni.nas.experiment.experiment - INFO - Experiment initialized successfully. Starting exploration strategy...
+2024-09-17 15:33:42,110 - nni.nas.strategy.rl - INFO - Sampling models with RL policy:
+PPOPolicy(
+  (actor): Actor(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=3, bias=True)
+  )
+  (critic): Critic(
+    (preprocess): Preprocessor(
+      (embedding): Embedding(4, 64)
+      (rnn): LSTM(74, 64, batch_first=True)
+      (fc): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+      )
+    )
+    (linear): Linear(in_features=64, out_features=1, bias=True)
+  )
+  (_actor_critic): ActorCritic(
+    (actor): Actor(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=3, bias=True)
+    )
+    (critic): Critic(
+      (preprocess): Preprocessor(
+        (embedding): Embedding(4, 64)
+        (rnn): LSTM(74, 64, batch_first=True)
+        (fc): Sequential(
+          (0): Linear(in_features=64, out_features=64, bias=True)
+          (1): ReLU()
+        )
+      )
+      (linear): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+2024-09-17 15:37:48,857 - nni.nas.execution.sequential - ERROR - Model 1 is interrupted. Exiting gracefully...
+2024-09-17 15:37:48,857 - nni.nas.strategy.base - WARNING - Strategy is interrupted.
+2024-09-17 15:37:48,857 - nni.experiment - WARNING - KeyboardInterrupt detected
+2024-09-17 15:37:48,857 - nni.nas.experiment.experiment - INFO - Stopping experiment, please wait...
+2024-09-17 15:37:48,867 - nni.nas.experiment.experiment - INFO - Checkpoint saved to /home/spartan/nni-experiments/7qw2ralt/checkpoint.
+2024-09-17 15:37:48,883 - nni.nas.experiment.experiment - INFO - Experiment stopped
+2024-09-17 15:37:48,883 - nni.nas.strategy.base - WARNING - Only 0 models are trained, but 1 top models are requested.

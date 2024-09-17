@@ -1,0 +1,50 @@
+{
+  "embedding_dim": {
+    "_type": "choice",
+    "_value": [100, 200, 300]
+  },
+  "cnn_filters": {
+    "_type": "choice",
+    "_value": [64, 128, 256]
+  },
+  "cnn_kernel_size": {
+    "_type": "choice",
+    "_value": [3, 5, 7]
+  },
+  "lstm_hidden_size": {
+    "_type": "choice",
+    "_value": [128, 256, 512]
+  },
+  "lstm_num_layers": {
+    "_type": "choice",
+    "_value": [1, 2, 3]
+  },
+  "lstm_dropout": {
+    "_type": "uniform",
+    "_value": [0.1, 0.5]
+  },
+  "use_highway": {
+    "_type": "choice",
+    "_value": [true, false]
+  },
+  "use_crf": {
+    "_type": "choice",
+    "_value": [true, false]
+  },
+  "optimizer": {
+    "_type": "choice",
+    "_value": ["adam", "sgd", "adamw"]
+  },
+  "learning_rate": {
+    "_type": "loguniform",
+    "_value": [1e-5, 1e-2]
+  },
+  "weight_decay": {
+    "_type": "loguniform",
+    "_value": [1e-6, 1e-3]
+  },
+  "batch_size": {
+    "_type": "choice",
+    "_value": [16, 32]
+  }
+}

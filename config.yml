@@ -1,0 +1,14 @@
+experimentName: nas_ner_experiment
+searchSpaceFile: src/nas/search_space.json
+trialCommand: python main.py
+trialCodeDirectory: .
+trialConcurrency: 1
+maxExperimentDuration: 3d
+maxTrialNumber: 200
+tuner:
+  name: Evolution
+  classArgs:
+    optimize_mode: maximize
+trainingService:
+  platform: local
+  useActiveGpu: true
