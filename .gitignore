@@ -1,3 +1,4 @@
 /model_results
-/data/embeddings/
 /data/processed/
+/data/embeddings/*
+!/data/embeddings/
