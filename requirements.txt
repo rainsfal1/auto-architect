@@ -7,3 +7,4 @@ pytorch-crf
 nni~=3.0
 pytorch_lightning
 fasttext~=0.9.3
+gym
